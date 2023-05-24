@@ -1,0 +1,21 @@
+.totalContainer {
+  padding: 20px 24px;
+  display: flex;
+  width: 360px;
+  max-width: 100%;
+  gap: 20px;
+  border: 1px solid var(--grey-2);
+  border-radius: 8px;
+  justify-content: space-between;
+}
+
+.leftContainer {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.txtPrimary {
+  color: var(--primary-1);
+}

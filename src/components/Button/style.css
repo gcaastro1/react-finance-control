@@ -1,0 +1,33 @@
+.btnPrimary {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: var(--primary-1);
+  color: var(--grey-1);
+}
+
+.btnPrimary:hover, .btnPrimary:focus {
+  background-color: var(--primary-2);
+  outline: none;
+  border: none;
+}
+
+.btnGrey {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: var(--grey-2);
+  color: var(--grey-5);
+}
+
+.btnGrey:hover {
+  background-color: var(--grey-4);
+  color: var(--grey-1);
+}
+
+.btnGrey:focus {
+  background-color: var(--primary-2);
+  color: var(--grey-1);
+  border: none;
+  outline: none;
+}

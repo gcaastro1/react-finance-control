@@ -1,0 +1,69 @@
+.cardContainer {
+  display: block;
+}
+
+.cardBody {
+  width: 100%;
+  height: 90px;
+  background-color: var(--grey-1);
+  display: flex;
+  padding: 0 20px;
+  border-radius: 8px;
+  position: relative;
+  animation: scaleAppear .5s ease-in;
+}
+
+.emptyBody {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.fullBody {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.borderGrey {
+  position: absolute;
+  background-color: var(--grey-2);
+  height: 100%;
+  width: 4px;
+  left: 0;
+  border-radius: 8px 0 0 8px;
+}
+
+.borderGreen {
+  position: absolute;
+  background-color: var(--secondary);
+  height: 100%;
+  width: 4px;
+  left: 0;
+  border-radius: 8px 0 0 8px;
+}
+.emptyTop {
+  height: 12px;
+  width: 60%;
+  background-color: var(--grey-2);
+}
+
+.emptyBottom {
+  height: 12px;
+  width: 20%;
+  background-color: var(--grey-2);
+}
+
+.rightContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@keyframes scaleAppear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: translateX(1);
+  }
+}

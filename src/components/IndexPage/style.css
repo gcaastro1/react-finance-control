@@ -1,0 +1,132 @@
+.bgDark {
+  background-color: var(--grey-4);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.container {
+  width: 980px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.infoContainer {
+  width: 320px;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 28px;
+  margin-top: 50px;
+}
+
+.logoKenzie {
+  width: 120px;
+}
+
+.buttonContainer {
+  width: 80%;
+}
+
+.illBg {
+  width: 600px;
+  height: 600px;
+  max-width: 80%;
+  background-image: url(../../assets/bg-cards.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illContainer {
+  position: relative;
+  width: 320px;
+  max-width: 100%;
+}
+
+.illContainerChildren {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.cardOne {
+  position: relative;
+  width: 260px;
+  max-width: 80%;
+  animation: cardCenter 1s ease;
+}
+
+.cardTwo {
+  position: absolute;
+  top: 160px;
+  right: 0;
+  width: 80%;
+  box-shadow: 0 3px 36px rgba(0, 0, 0, 0.25);
+  transition: all .5s ease;
+  animation: cardRight 1s ease;
+}
+
+.cardThree {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 80%;
+  box-shadow: 0 3px 36px rgba(0, 0, 0, 0.25);
+  animation: cardLeft 1s ease;
+}
+
+@media (min-width: 400px) {
+  .cardTwo {
+    top: 180px;
+    transition: all .5s ease;
+  }
+  
+}
+
+@media (min-width: 880px) {
+  .mainContainer {
+    flex-direction: row;
+  }
+}
+
+@keyframes cardLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes cardRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes cardCenter {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

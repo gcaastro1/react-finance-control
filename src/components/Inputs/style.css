@@ -1,0 +1,63 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 12px;
+  position: relative;
+}
+
+input, select {
+  padding: 12px 16px;
+  width: 100%;
+  max-width: 100%;
+  outline: none;
+  border: 1px solid var(--grey-2);
+  background-color: var(--grey-2);
+  border-radius: 8px;
+  font-size: 16px;
+  color: var(--grey-4);
+  position: relative;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+label {
+  font-size: var(--body-text);
+}
+
+.moneyIcon {
+  position: absolute;
+  top: 36px;
+  right: 10px;
+  background-color: var(--grey-2);
+  padding: 10px;
+  border-radius: 9px;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+/* input[type='radio'] + label */ 
+
+label:has(input[type='radio']){
+  background-color: var(--grey-2);
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--grey-5);
+}
+
+label:has(input[type='radio']:checked) {
+  background-color: var(--primary-1);
+  color: var(--grey-1);
+}
